@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Admin | Shivdhan Shirgole</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+</head>
+<body class="page">
+<main>
+<div class="apage" id="adm"><div class="w">
+<div class="ah"><h2>Admin <span class="g">Panel</span></h2><div class="aa"><button class="mb" id="aout" hidden>Logout</button><a class="mb" href="index.html">← Back to site</a></div></div>
+<form class="fm" id="alog" novalidate><h3>Admin login</h3><p>Only the portfolio owner can sign in here.</p>
+<div class="fg"><div><label for="aem">Email</label><input id="aem" type="email" autocomplete="username" required></div><div><label for="apw">Password</label><input id="apw" type="password" autocomplete="current-password" required></div></div>
+<button class="btn pri" type="submit">Login</button></form>
+<div id="ast" role="status" aria-live="polite"></div>
+<div id="apan" hidden>
+<div class="atabs"><button class="on" data-t="m">Messages <span id="mc"></span></button><button data-t="p">Projects</button></div>
+<div id="tm"></div>
+<div id="tp" hidden>
+<form class="fm" id="pf" novalidate style="margin:0 0 20px;max-width:none"><h3>Add a project</h3>
+<div class="fg"><div><label for="pemoji">Emoji</label><input id="pemoji" maxlength="4" placeholder="🚀"></div><div><label for="ptag">Tag</label><input id="ptag" maxlength="20" placeholder="Live / New"></div>
+<div class="full"><label for="ptitle">Title</label><input id="ptitle" name="ptitle" maxlength="80"></div>
+<div class="full"><label for="pdesc">Description</label><textarea id="pdesc" name="pdesc" maxlength="400" style="min-height:90px"></textarea></div>
+<div><label for="ptech">Tech (comma separated)</label><input id="ptech" placeholder="Python, Django, MySQL"></div><div><label for="plink">Live link (optional)</label><input id="plink" placeholder="https://..."></div></div>
+<button class="btn pri" type="submit">Add project</button><div id="pst" role="status"></div></form>
+<div id="pl"></div></div>
+</div></div></div>
+</main>
+<div id="lab-root"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+<script src="site.js"></script>
+<script src="lab.js"></script>
+<script src="fb.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
